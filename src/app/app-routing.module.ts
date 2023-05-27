@@ -11,6 +11,7 @@ export class AppRoutingModule {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.navigate(['www.emperiorking.com'])
+    this.router.navigate(['/']);
+    this.router.navigate(['/']).then(()=> {window.location.reload()});
   }
 }
