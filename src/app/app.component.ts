@@ -1,5 +1,4 @@
-import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,4 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'emperiorKing';
-
-  @HostListener('window:beforeunload') goToPage() {
-    this.router.navigate(['/hello']);
-  }
-
-  constructor(
-    private router: Router
-  ) {
-  }
-}
 }
